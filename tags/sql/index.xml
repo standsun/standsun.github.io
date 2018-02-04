@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on StandSun - 记录生活的点点滴滴</title>
+    <link>https://standsun.github.io/tags/sql/</link>
+    <description>Recent content in Sql on StandSun - 记录生活的点点滴滴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Mar 2017 21:31:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://standsun.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SQL查看Mysql数据库大小</title>
+      <link>https://standsun.github.io/post/2017-03-23-mysql-database-size/</link>
+      <pubDate>Thu, 23 Mar 2017 21:31:29 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-23-mysql-database-size/</guid>
+      <description>&lt;p&gt;要想知道每个数据库的大小的话，步骤如下：&lt;/p&gt;
+
+&lt;p&gt;进入 &lt;code&gt;information_schema&lt;/code&gt; 数据库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;use information_schema;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;查询所有数据的大小：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;select concat(round(sum(data_length/1024/1024),2),&#39;MB&#39;) as data 
+from tables;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

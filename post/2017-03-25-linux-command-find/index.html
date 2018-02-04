@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux的find命令 - StandSun - 记录生活的点点滴滴</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="standsun" />
+  <meta name="description" content="参数说明 -exec # 对匹配的文件执行该参数所给出的命令 -ok # 同-exec，只是执行命令之前需用户确认 -name FILENAME # 指定文件名 -perm 755 # 指定文件执行权限 -user USERNAME # 指定文件创建用户 -group GROUPNAME # 指定用户组 -mtime -n/&#43;n # 指定文件更改时间，-n指n天以内，&#43;n指n天以前 -atime -n/&#43;n # 指定文件访问时间，-n指n天以内，&#43;n指n天以前 -ctime -n/&#43;n # 指定文件创建时间，-n指n天以内，&#43;n指n天以前 -type b/d/c/p/l/f # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件 -size n[cwbkMGc] # 指定文件大小 -depth # 使查找在进入子目录前先行查找完本目录 -follow # 如果遇到符号链接文件，就跟踪链接所指的文件  
+" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.35" />
+
+
+<link rel="canonical" href="https://standsun.github.io/post/2017-03-25-linux-command-find/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.0.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/customer.css">
+
+
+<meta property="og:title" content="Linux的find命令" />
+<meta property="og:description" content="参数说明
+
+-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/&#43;n       # 指定文件更改时间，-n指n天以内，&#43;n指n天以前
+-atime -n/&#43;n       # 指定文件访问时间，-n指n天以内，&#43;n指n天以前
+-ctime -n/&#43;n       # 指定文件创建时间，-n指n天以内，&#43;n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://standsun.github.io/post/2017-03-25-linux-command-find/" />
+
+
+
+<meta property="article:published_time" content="2017-03-25T22:00:57&#43;08:00"/>
+
+<meta property="article:modified_time" content="2017-03-25T22:00:57&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Linux的find命令">
+<meta itemprop="description" content="参数说明
+
+-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/&#43;n       # 指定文件更改时间，-n指n天以内，&#43;n指n天以前
+-atime -n/&#43;n       # 指定文件访问时间，-n指n天以内，&#43;n指n天以前
+-ctime -n/&#43;n       # 指定文件创建时间，-n指n天以内，&#43;n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+
+
+">
+
+
+<meta itemprop="datePublished" content="2017-03-25T22:00:57&#43;08:00" />
+<meta itemprop="dateModified" content="2017-03-25T22:00:57&#43;08:00" />
+<meta itemprop="wordCount" content="769">
+
+
+
+<meta itemprop="keywords" content="Linux," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux的find命令"/>
+<meta name="twitter:description" content="参数说明
+
+-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/&#43;n       # 指定文件更改时间，-n指n天以内，&#43;n指n天以前
+-atime -n/&#43;n       # 指定文件访问时间，-n指n天以内，&#43;n指n天以前
+-ctime -n/&#43;n       # 指定文件创建时间，-n指n天以内，&#43;n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">STANDSUN</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">STANDSUN</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux的find命令</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-03-25 </span>
+        <div class="post-category">
+            
+              <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"> 服务器 </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#参数说明">参数说明</a></li>
+<li><a href="#简单示例">简单示例</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h4 id="参数说明">参数说明</h4>
+
+<pre><code>-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/+n       # 指定文件更改时间，-n指n天以内，+n指n天以前
+-atime -n/+n       # 指定文件访问时间，-n指n天以内，+n指n天以前
+-ctime -n/+n       # 指定文件创建时间，-n指n天以内，+n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+</code></pre>
+
+<p></p>
+
+<h4 id="简单示例">简单示例</h4>
+
+<ul>
+<li><p>大写字母开头的文件</p>
+
+<pre><code>find . -name &quot;[A-Z]*&quot;
+</code></pre></li>
+
+<li><p>host开头的文件</p>
+
+<pre><code>find /etc -name &quot;host*&quot;
+</code></pre></li>
+
+<li><p>全部用户可读写执行的文件</p>
+
+<pre><code>find . -perm -777 -exec ls -l {} \;
+</code></pre></li>
+
+<li><p>所有文件夹</p>
+
+<pre><code>find . -type d
+</code></pre></li>
+
+<li><p>大于1MB的文件</p>
+
+<pre><code>find . -size +1000000c
+</code></pre></li>
+
+<li><p>ap或may开头的文件</p>
+
+<pre><code>find -name 'ap*' -o -name 'may*'
+</code></pre></li>
+
+<li><p>1天内改动过的文件</p>
+
+<pre><code>find . -mtime -2
+</code></pre></li>
+
+<li><p>1天之内存取过的文件</p>
+
+<pre><code>find . -atime -1
+</code></pre></li>
+
+<li><p>60分钟前改动过的文件</p>
+
+<pre><code>find . -mmin +60
+</code></pre></li>
+
+<li><p>30分钟前被存取过的文件</p>
+
+<pre><code>find . -amin +30
+</code></pre></li>
+
+<li><p>更新时间比tmp.txt早的文件</p>
+
+<pre><code>find . -newer tmp.txt
+</code></pre></li>
+
+<li><p>存取时间比tmp.txt早的文件</p>
+
+<pre><code>find . -anewer tmp.txt
+</code></pre></li>
+
+<li><p>被改动且在2日内被存取过的文件</p>
+
+<pre><code>find . -used -2
+</code></pre></li>
+
+<li><p>属于用户www的文件</p>
+
+<pre><code>find . -user www
+</code></pre></li>
+
+<li><p>用户识别码大于501的文件</p>
+
+<pre><code>find . -uid +501
+</code></pre></li>
+
+<li><p>用户组为www的文件</p>
+
+<pre><code>find . -group www
+</code></pre></li>
+
+<li><p>用户组ID为501的文件</p>
+
+<pre><code>find . -gid 501
+</code></pre></li>
+
+<li><p>不属于本地用户的文件</p>
+
+<pre><code>find . -nouser
+</code></pre></li>
+
+<li><p>不属于本地组的文件</p>
+
+<pre><code>find . -nogroup
+</code></pre></li>
+
+<li><p>最大查找3层</p>
+
+<pre><code>find . -name tmp.txt -maxdepth 4
+</code></pre></li>
+
+<li><p>从第2层开始查找</p>
+
+<pre><code>find . -name tmp.txt -mindepth 3
+</code></pre></li>
+
+<li><p>大小为0的文件</p>
+
+<pre><code>find . -empty
+</code></pre></li>
+
+<li><p>大于512k的文件</p>
+
+<pre><code>find . -size +512k
+</code></pre></li>
+
+<li><p>小于512k的文件</p>
+
+<pre><code>find . -size -512k
+</code></pre></li>
+
+<li><p>硬连接数大于2的文件</p>
+
+<pre><code>find . -links +2
+</code></pre></li>
+
+<li><p>输出查找的文件内容</p>
+
+<pre><code>find . -name tmp.txt -exec cat {} \;
+</code></pre></li>
+
+<li><p>删除查找的文件，需要用户确认</p>
+
+<pre><code>find . -name tmp.txt -ok rm {} \;
+</code></pre></li>
+
+<li><p>查找普通文件</p>
+
+<pre><code>find . -type f -exec ls -l {} \;
+</code></pre></li>
+
+<li><p>查找并删除更改时间在5日以前的文件</p>
+
+<pre><code>find . -type f -mtime +5 -exec -ok rm {} \;
+</code></pre></li>
+
+<li><p>查找当天修改过的文件</p>
+
+<pre><code>find . -mtime -1 -type f -exec ls -l {} \;
+</code></pre></li>
+
+<li><p>查找磁盘中大于3M的文件</p>
+
+<pre><code>find . -size +3000k -exec ls -ld {} ;
+</code></pre></li>
+
+<li><p>查找的php文件并拷到/tmp文件夹</p>
+
+<pre><code>find . -name '*.php' -exec cp '{}' /tmp ';'
+</code></pre></li>
+</ul>
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">standsun</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2017-03-25</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/linux/">Linux</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/2017-03-26-javascript-command-repeat/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Javascript重复执行</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/2017-03-24-php-preg-decorate/">
+            <span class="next-text nav-default">PHP正则表达式模式修饰符</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:standsun@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://github.com/standsun" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/standsun" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/standsun" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/standsun" class="iconfont icon-douban" title="douban"></a>
+  <a href="https://standsun.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">standsun</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.0.0"></script>
+
+
+
+
+
+
+
+<script src="/js/customer.js"></script>
+
+
+</body>
+</html>

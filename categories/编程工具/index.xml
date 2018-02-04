@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程工具 on StandSun - 记录生活的点点滴滴</title>
+    <link>https://standsun.github.io/categories/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 编程工具 on StandSun - 记录生活的点点滴滴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Apr 2017 22:47:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://standsun.github.io/categories/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>lua的math库</title>
+      <link>https://standsun.github.io/post/2017-04-03-linux-wrk/</link>
+      <pubDate>Mon, 03 Apr 2017 22:47:17 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-04-03-linux-wrk/</guid>
+      <description>&lt;p&gt;wrk在HTTP负载测试方面有令人吃惊的表现，负载测试时可以运行在多个CPU上，使用了很多先进的多线程设计思想和一些操作系统特定的高性能IO机制，能够用很少的线程实现非常高的并发量。&lt;a href=&#34;https://github.com/wg/wrk&#34;&gt;GitHub代码库&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/wg/wrk.git
+cd wrk
+make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Note:&lt;/code&gt; 建议将编译生成的可执行文件 wrk移动到&lt;code&gt;bin&lt;/code&gt; 目录&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>lua的math库 - StandSun - 记录生活的点点滴滴</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="standsun" />
+  <meta name="description" content="
+" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.35" />
+
+
+<link rel="canonical" href="https://standsun.github.io/post/2017-04-02-lua-math/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.0.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/css/customer.css">
+
+
+<meta property="og:title" content="lua的math库" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://standsun.github.io/post/2017-04-02-lua-math/" />
+
+
+
+<meta property="article:published_time" content="2017-04-02T22:33:18&#43;08:00"/>
+
+<meta property="article:modified_time" content="2017-04-02T22:33:18&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="lua的math库">
+<meta itemprop="description" content="">
+
+
+<meta itemprop="datePublished" content="2017-04-02T22:33:18&#43;08:00" />
+<meta itemprop="dateModified" content="2017-04-02T22:33:18&#43;08:00" />
+<meta itemprop="wordCount" content="360">
+
+
+
+<meta itemprop="keywords" content="Lua,Math," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="lua的math库"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">STANDSUN</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">STANDSUN</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">lua的math库</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-04-02 </span>
+        <div class="post-category">
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"> 编程语言 </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p></p>
+
+<table>
+<thead>
+<tr>
+<th align="center">函数名</th>
+<th align="left">描述</th>
+<th align="left">示例</th>
+<th align="center">结果</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">pi</td>
+<td align="left">圆周率</td>
+<td align="left">math.pi</td>
+<td align="center">3.1415926535898</td>
+</tr>
+
+<tr>
+<td align="center">abs</td>
+<td align="left">取绝对值</td>
+<td align="left">math.abs(-2012)</td>
+<td align="center">2012</td>
+</tr>
+
+<tr>
+<td align="center">ceil</td>
+<td align="left">向上取整</td>
+<td align="left">math.ceil(9.1)</td>
+<td align="center">10</td>
+</tr>
+
+<tr>
+<td align="center">floor</td>
+<td align="left">向下取整</td>
+<td align="left">math.floor(9.9)</td>
+<td align="center">9</td>
+</tr>
+
+<tr>
+<td align="center">max</td>
+<td align="left">取参数最大值</td>
+<td align="left">math.max(2,4,6,8)</td>
+<td align="center">8</td>
+</tr>
+
+<tr>
+<td align="center">min</td>
+<td align="left">取参数最小值</td>
+<td align="left">math.min(2,4,6,8)</td>
+<td align="center">2</td>
+</tr>
+
+<tr>
+<td align="center">pow</td>
+<td align="left">计算x的y次幂</td>
+<td align="left">math.pow(2,16)</td>
+<td align="center">65536</td>
+</tr>
+
+<tr>
+<td align="center">sqrt</td>
+<td align="left">开平方</td>
+<td align="left">math.sqrt(65536)</td>
+<td align="center">256</td>
+</tr>
+
+<tr>
+<td align="center">mod</td>
+<td align="left">取模</td>
+<td align="left">math.mod(65535,2)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>modf</td>
+<td>取整数和小数部分</td>
+<td>math.modf(20.12)</td>
+</tr>
+
+<tr>
+<td>randomseed</td>
+<td>设随机数种子</td>
+<td>math.randomseed(os.time())</td>
+</tr>
+
+<tr>
+<td>random</td>
+<td>取随机数</td>
+<td>math.random(5,90)</td>
+</tr>
+
+<tr>
+<td>rad</td>
+<td>角度转弧度</td>
+<td>math.rad(180)</td>
+</tr>
+
+<tr>
+<td>deg</td>
+<td>弧度转角度</td>
+<td>math.deg(math.pi)</td>
+</tr>
+
+<tr>
+<td>exp</td>
+<td>e的x次方</td>
+<td>math.exp(4)</td>
+</tr>
+
+<tr>
+<td>log</td>
+<td>计算x的自然对数</td>
+<td>math.log(54.598150033144)</td>
+</tr>
+
+<tr>
+<td>log10</td>
+<td>计算10为底x的对数</td>
+<td>math.log10(1000)</td>
+</tr>
+
+<tr>
+<td>frexp</td>
+<td>将参数拆成x</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>ldexp</td>
+<td>计算x</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>sin</td>
+<td>正弦</td>
+<td>math.sin(math.rad(30))</td>
+</tr>
+
+<tr>
+<td>cos</td>
+<td>余弦</td>
+<td>math.cos(math.rad(60))</td>
+</tr>
+
+<tr>
+<td>tan</td>
+<td>正切</td>
+<td>math.tan(math.rad(45))</td>
+</tr>
+
+<tr>
+<td>asin</td>
+<td>反正弦</td>
+<td>math.deg(math.asin(0.5))</td>
+</tr>
+
+<tr>
+<td>acos</td>
+<td>反余弦</td>
+<td>math.deg(math.acos(0.5))</td>
+</tr>
+
+<tr>
+<td>atan</td>
+<td>反正切</td>
+<td>math.deg(math.atan(1))</td>
+</tr>
+
+<tr>
+<td>函数名</td>
+<td>描述</td>
+<td>示例</td>
+</tr>
+
+<tr>
+<td>pi</td>
+<td>圆周率</td>
+<td>math.pi</td>
+</tr>
+
+<tr>
+<td>abs</td>
+<td>取绝对值</td>
+<td>math.abs(-2012)</td>
+</tr>
+
+<tr>
+<td>ceil</td>
+<td>向上取整</td>
+<td>math.ceil(9.1)</td>
+</tr>
+
+<tr>
+<td>floor</td>
+<td>向下取整</td>
+<td>math.floor(9.9)</td>
+</tr>
+
+<tr>
+<td>max</td>
+<td>取参数最大值</td>
+<td>math.max(2,4,6,8)</td>
+</tr>
+
+<tr>
+<td>min</td>
+<td>取参数最小值</td>
+<td>math.min(2,4,6,8)</td>
+</tr>
+
+<tr>
+<td>pow</td>
+<td>计算x的y次幂</td>
+<td>math.pow(2,16)</td>
+</tr>
+
+<tr>
+<td>sqrt</td>
+<td>开平方</td>
+<td>math.sqrt(65536)</td>
+</tr>
+
+<tr>
+<td>mod</td>
+<td>取模</td>
+<td>math.mod(65535,2)</td>
+</tr>
+
+<tr>
+<td>modf</td>
+<td>取整数和小数部分</td>
+<td>math.modf(20.12)</td>
+</tr>
+
+<tr>
+<td>randomseed</td>
+<td>设随机数种子</td>
+<td>math.randomseed(os.time())</td>
+</tr>
+
+<tr>
+<td>random</td>
+<td>取随机数</td>
+<td>math.random(5,90)</td>
+</tr>
+
+<tr>
+<td>rad</td>
+<td>角度转弧度</td>
+<td>math.rad(180)</td>
+</tr>
+
+<tr>
+<td>deg</td>
+<td>弧度转角度</td>
+<td>math.deg(math.pi)</td>
+</tr>
+
+<tr>
+<td>exp</td>
+<td>e的x次方</td>
+<td>math.exp(4)</td>
+</tr>
+
+<tr>
+<td>log</td>
+<td>计算x的自然对数</td>
+<td>math.log(54.598150033144)</td>
+</tr>
+
+<tr>
+<td>log10</td>
+<td>计算10为底x的对数</td>
+<td>math.log10(1000)</td>
+</tr>
+
+<tr>
+<td>frexp</td>
+<td>将参数拆成x</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>ldexp</td>
+<td>计算x</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>sin</td>
+<td>正弦</td>
+<td>math.sin(math.rad(30))</td>
+</tr>
+
+<tr>
+<td>cos</td>
+<td>余弦</td>
+<td>math.cos(math.rad(60))</td>
+</tr>
+
+<tr>
+<td>tan</td>
+<td>正切</td>
+<td>math.tan(math.rad(45))</td>
+</tr>
+
+<tr>
+<td>asin</td>
+<td>反正弦</td>
+<td>math.deg(math.asin(0.5))</td>
+</tr>
+
+<tr>
+<td>acos</td>
+<td>反余弦</td>
+<td>math.deg(math.acos(0.5))</td>
+</tr>
+
+<tr>
+<td>atan</td>
+<td>反正切</td>
+<td>math.deg(math.atan(1))</td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">standsun</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2017-04-02</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/lua/">Lua</a>
+          
+          <a href="/tags/math/">Math</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/2017-04-03-linux-wrk/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">lua的math库</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/2017-04-01-mac-alfred-set-item/">
+            <span class="next-text nav-default">Alfred设置终端为iTerm</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:standsun@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://github.com/standsun" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/standsun" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/standsun" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/standsun" class="iconfont icon-douban" title="douban"></a>
+  <a href="https://standsun.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">standsun</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.0.0"></script>
+
+
+
+
+
+
+
+<script src="/js/customer.js"></script>
+
+
+</body>
+</html>

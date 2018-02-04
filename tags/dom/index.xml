@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dom on StandSun - 记录生活的点点滴滴</title>
+    <link>https://standsun.github.io/tags/dom/</link>
+    <description>Recent content in Dom on StandSun - 记录生活的点点滴滴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Mar 2017 22:17:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://standsun.github.io/tags/dom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jQuery 自动触发事件</title>
+      <link>https://standsun.github.io/post/2017-03-29-javascript-auto-execute/</link>
+      <pubDate>Wed, 29 Mar 2017 22:17:57 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-29-javascript-auto-execute/</guid>
+      <description>&lt;h4 id=&#34;常用模拟&#34;&gt;常用模拟&lt;/h4&gt;
+
+&lt;p&gt;有时候，需要通过模拟用户操作，来达到单击的效果。例如在用户进入页面后，就触发&lt;code&gt;click&lt;/code&gt;事件，而不需要用户去主动单击。&lt;/p&gt;
+
+&lt;p&gt;在jQuery中，可以使用&lt;code&gt;trigger&lt;/code&gt;方法完成模拟操作。例如可以使用下面的代码来触发id为btn的按钮的&lt;code&gt;click&lt;/code&gt;事件。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&#39;#btn&#39;).trigger(&amp;quot;click&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样，当页面加载完毕后，就会立刻输出想要的效果。也可以直接简写click()，来达到同样的效果：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;#btn&#39;).click();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Javascript的Dom属性和方法</title>
+      <link>https://standsun.github.io/post/2017-03-27-javascript-dom/</link>
+      <pubDate>Mon, 27 Mar 2017 22:08:52 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-27-javascript-dom/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;document.title // 设置文档标题等价于HTML的title标签
+document.bgColor // 设置页面背景色
+document.fgColor // 设置前景色(文本颜色)
+document.linkColor // 未点击过的链接颜色
+document.alinkColor // 激活链接(焦点在此链接上)的颜色
+document.vlinkColor // 已点击过的链接颜色
+document.URL // 设置URL属性从而在同一窗口打开另一网页
+document.fileCreatedDate // 文件建立日期，只读属性
+document.fileModifiedDate // 文件修改日期，只读属性
+document.charset // 设置字符集
+document.fileSize // 文件大小，只读属性
+document.cookie // 设置和读出cookie
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

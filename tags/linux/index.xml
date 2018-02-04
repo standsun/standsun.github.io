@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on StandSun - 记录生活的点点滴滴</title>
+    <link>https://standsun.github.io/tags/linux/</link>
+    <description>Recent content in Linux on StandSun - 记录生活的点点滴滴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Mar 2017 22:00:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://standsun.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux的find命令</title>
+      <link>https://standsun.github.io/post/2017-03-25-linux-command-find/</link>
+      <pubDate>Sat, 25 Mar 2017 22:00:57 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-25-linux-command-find/</guid>
+      <description>&lt;h4 id=&#34;参数说明&#34;&gt;参数说明&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/+n       # 指定文件更改时间，-n指n天以内，+n指n天以前
+-atime -n/+n       # 指定文件访问时间，-n指n天以内，+n指n天以前
+-ctime -n/+n       # 指定文件创建时间，-n指n天以内，+n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

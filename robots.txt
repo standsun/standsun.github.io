@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://standsun.github.io/sitemap.xml

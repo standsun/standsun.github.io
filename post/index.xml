@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on StandSun - 记录生活的点点滴滴</title>
+    <link>https://standsun.github.io/post/</link>
+    <description>Recent content in Posts on StandSun - 记录生活的点点滴滴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Apr 2017 22:47:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://standsun.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>lua的math库</title>
+      <link>https://standsun.github.io/post/2017-04-03-linux-wrk/</link>
+      <pubDate>Mon, 03 Apr 2017 22:47:17 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-04-03-linux-wrk/</guid>
+      <description>&lt;p&gt;wrk在HTTP负载测试方面有令人吃惊的表现，负载测试时可以运行在多个CPU上，使用了很多先进的多线程设计思想和一些操作系统特定的高性能IO机制，能够用很少的线程实现非常高的并发量。&lt;a href=&#34;https://github.com/wg/wrk&#34;&gt;GitHub代码库&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/wg/wrk.git
+cd wrk
+make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Note:&lt;/code&gt; 建议将编译生成的可执行文件 wrk移动到&lt;code&gt;bin&lt;/code&gt; 目录&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>lua的math库</title>
+      <link>https://standsun.github.io/post/2017-04-02-lua-math/</link>
+      <pubDate>Sun, 02 Apr 2017 22:33:18 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-04-02-lua-math/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alfred设置终端为iTerm</title>
+      <link>https://standsun.github.io/post/2017-04-01-mac-alfred-set-item/</link>
+      <pubDate>Sat, 01 Apr 2017 22:26:06 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-04-01-mac-alfred-set-item/</guid>
+      <description>&lt;p&gt;Alfred2升级到&lt;code&gt;2.9+&lt;/code&gt;后调用不了iTerm，解决方法：&lt;/p&gt;
+
+&lt;p&gt;打开 &lt;code&gt;Alfred Preferences -&amp;gt; Features -&amp;gt; Teminal/Shell&lt;/code&gt; 复制下面代码到框中&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决Mac中vim无法复制的问题</title>
+      <link>https://standsun.github.io/post/2017-03-31-mac-vim-copy/</link>
+      <pubDate>Fri, 31 Mar 2017 22:23:55 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-31-mac-vim-copy/</guid>
+      <description>&lt;p&gt;使用mac自带的vim无法使用&amp;rdquo;+y和&amp;rdquo;+p复制粘贴文本，解决办法：&lt;/p&gt;
+
+&lt;p&gt;在&lt;code&gt;.vimrc&lt;/code&gt;中添加如下两条语句&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vmap &amp;quot;+y :w !pbcopy&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
+nmap &amp;quot;+p :r !pbpaste&amp;lt;CR&amp;gt;&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery操作radio的取值与赋值</title>
+      <link>https://standsun.github.io/post/2017-03-30-javascript-radio/</link>
+      <pubDate>Thu, 30 Mar 2017 22:20:58 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-30-javascript-radio/</guid>
+      <description>&lt;h4 id=&#34;获取radio的值&#34;&gt;获取radio的值&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&amp;quot;input[name=&#39;radioName&#39;][checked]&amp;quot;).val();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;给radio赋值-选中值为2的radio&#34;&gt;给radio赋值, 选中值为2的radio&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&amp;quot;input[name=&#39;radioName&#39;][value=2]&amp;quot;).attr(&amp;quot;checked&amp;quot;,true);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery 自动触发事件</title>
+      <link>https://standsun.github.io/post/2017-03-29-javascript-auto-execute/</link>
+      <pubDate>Wed, 29 Mar 2017 22:17:57 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-29-javascript-auto-execute/</guid>
+      <description>&lt;h4 id=&#34;常用模拟&#34;&gt;常用模拟&lt;/h4&gt;
+
+&lt;p&gt;有时候，需要通过模拟用户操作，来达到单击的效果。例如在用户进入页面后，就触发&lt;code&gt;click&lt;/code&gt;事件，而不需要用户去主动单击。&lt;/p&gt;
+
+&lt;p&gt;在jQuery中，可以使用&lt;code&gt;trigger&lt;/code&gt;方法完成模拟操作。例如可以使用下面的代码来触发id为btn的按钮的&lt;code&gt;click&lt;/code&gt;事件。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&#39;#btn&#39;).trigger(&amp;quot;click&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样，当页面加载完毕后，就会立刻输出想要的效果。也可以直接简写click()，来达到同样的效果：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;#btn&#39;).click();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>网页中引入jQuery</title>
+      <link>https://standsun.github.io/post/2017-03-28-jquery-insert-brown-page/</link>
+      <pubDate>Tue, 28 Mar 2017 22:10:31 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-28-jquery-insert-brown-page/</guid>
+      <description>&lt;p&gt;chrome浏览器的console中执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;(function(d){
+    d.head.appendChild(d.createElement(&#39;script&#39;)).src=&amp;quot;//code.jquery.com/jquery-1.9.1.min.js&amp;quot;
+})(document);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Javascript的Dom属性和方法</title>
+      <link>https://standsun.github.io/post/2017-03-27-javascript-dom/</link>
+      <pubDate>Mon, 27 Mar 2017 22:08:52 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-27-javascript-dom/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;document.title // 设置文档标题等价于HTML的title标签
+document.bgColor // 设置页面背景色
+document.fgColor // 设置前景色(文本颜色)
+document.linkColor // 未点击过的链接颜色
+document.alinkColor // 激活链接(焦点在此链接上)的颜色
+document.vlinkColor // 已点击过的链接颜色
+document.URL // 设置URL属性从而在同一窗口打开另一网页
+document.fileCreatedDate // 文件建立日期，只读属性
+document.fileModifiedDate // 文件修改日期，只读属性
+document.charset // 设置字符集
+document.fileSize // 文件大小，只读属性
+document.cookie // 设置和读出cookie
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Javascript重复执行</title>
+      <link>https://standsun.github.io/post/2017-03-26-javascript-command-repeat/</link>
+      <pubDate>Sun, 26 Mar 2017 22:06:55 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-26-javascript-command-repeat/</guid>
+      <description>&lt;h5 id=&#34;需要执行的方法&#34;&gt;需要执行的方法&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function writeTime() {
+var oDate = new Date();
+    document.write(oDate.toLocaleString() + &#39;&amp;lt;br/&amp;gt;&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux的find命令</title>
+      <link>https://standsun.github.io/post/2017-03-25-linux-command-find/</link>
+      <pubDate>Sat, 25 Mar 2017 22:00:57 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-25-linux-command-find/</guid>
+      <description>&lt;h4 id=&#34;参数说明&#34;&gt;参数说明&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;-exec              # 对匹配的文件执行该参数所给出的命令
+-ok                # 同-exec，只是执行命令之前需用户确认
+-name FILENAME     # 指定文件名
+-perm 755          # 指定文件执行权限
+-user USERNAME     # 指定文件创建用户
+-group GROUPNAME   # 指定用户组
+-mtime -n/+n       # 指定文件更改时间，-n指n天以内，+n指n天以前
+-atime -n/+n       # 指定文件访问时间，-n指n天以内，+n指n天以前
+-ctime -n/+n       # 指定文件创建时间，-n指n天以内，+n指n天以前
+-type b/d/c/p/l/f  # 指定文件类型：块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[cwbkMGc]   # 指定文件大小
+-depth             # 使查找在进入子目录前先行查找完本目录
+-follow            # 如果遇到符号链接文件，就跟踪链接所指的文件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PHP正则表达式模式修饰符</title>
+      <link>https://standsun.github.io/post/2017-03-24-php-preg-decorate/</link>
+      <pubDate>Fri, 24 Mar 2017 21:48:52 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-24-php-preg-decorate/</guid>
+      <description>&lt;p&gt;PHP模式修饰符主要用来调整正则表达式的解释，提扩展了正则表达式在匹配、替换等操作的某些功能，增强了正则的能力：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SQL查看Mysql数据库大小</title>
+      <link>https://standsun.github.io/post/2017-03-23-mysql-database-size/</link>
+      <pubDate>Thu, 23 Mar 2017 21:31:29 +0800</pubDate>
+      
+      <guid>https://standsun.github.io/post/2017-03-23-mysql-database-size/</guid>
+      <description>&lt;p&gt;要想知道每个数据库的大小的话，步骤如下：&lt;/p&gt;
+
+&lt;p&gt;进入 &lt;code&gt;information_schema&lt;/code&gt; 数据库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;use information_schema;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;查询所有数据的大小：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;select concat(round(sum(data_length/1024/1024),2),&#39;MB&#39;) as data 
+from tables;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Math on StandSun - 记录生活的点点滴滴</title>
-    <link>https://standsun.github.io/tags/math/</link>
-    <description>Recent content in Math on StandSun - 记录生活的点点滴滴</description>
+    <title>Math on StandSun</title>
+    <link>http://www.standsun.com/tags/math/</link>
+    <description>Recent content in Math on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 02 Apr 2017 22:33:18 +0800</lastBuildDate>
     
-	<atom:link href="https://standsun.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.standsun.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>lua的math库</title>
-      <link>https://standsun.github.io/post/2017-04-02-lua-math/</link>
+      <link>http://www.standsun.com/post/2017-04-02-lua-math/</link>
       <pubDate>Sun, 02 Apr 2017 22:33:18 +0800</pubDate>
       
-      <guid>https://standsun.github.io/post/2017-04-02-lua-math/</guid>
+      <guid>http://www.standsun.com/post/2017-04-02-lua-math/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

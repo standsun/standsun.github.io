@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://standsun.github.io/sitemap.xml
+Sitemap: http://www.standsun.com/sitemap.xml

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on StandSun - 记录生活的点点滴滴</title>
-    <link>https://standsun.github.io/tags/mac/</link>
-    <description>Recent content in Mac on StandSun - 记录生活的点点滴滴</description>
+    <title>Mac on StandSun</title>
+    <link>http://www.standsun.com/tags/mac/</link>
+    <description>Recent content in Mac on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Apr 2017 22:26:06 +0800</lastBuildDate>
     
-	<atom:link href="https://standsun.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.standsun.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Alfred设置终端为iTerm</title>
-      <link>https://standsun.github.io/post/2017-04-01-mac-alfred-set-item/</link>
+      <link>http://www.standsun.com/post/2017-04-01-mac-alfred-set-item/</link>
       <pubDate>Sat, 01 Apr 2017 22:26:06 +0800</pubDate>
       
-      <guid>https://standsun.github.io/post/2017-04-01-mac-alfred-set-item/</guid>
+      <guid>http://www.standsun.com/post/2017-04-01-mac-alfred-set-item/</guid>
       <description>&lt;p&gt;Alfred2升级到&lt;code&gt;2.9+&lt;/code&gt;后调用不了iTerm，解决方法：&lt;/p&gt;
 
 &lt;p&gt;打开 &lt;code&gt;Alfred Preferences -&amp;gt; Features -&amp;gt; Teminal/Shell&lt;/code&gt; 复制下面代码到框中&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>解决Mac中vim无法复制的问题</title>
-      <link>https://standsun.github.io/post/2017-03-31-mac-vim-copy/</link>
+      <link>http://www.standsun.com/post/2017-03-31-mac-vim-copy/</link>
       <pubDate>Fri, 31 Mar 2017 22:23:55 +0800</pubDate>
       
-      <guid>https://standsun.github.io/post/2017-03-31-mac-vim-copy/</guid>
+      <guid>http://www.standsun.com/post/2017-03-31-mac-vim-copy/</guid>
       <description>&lt;p&gt;使用mac自带的vim无法使用&amp;rdquo;+y和&amp;rdquo;+p复制粘贴文本，解决办法：&lt;/p&gt;
 
 &lt;p&gt;在&lt;code&gt;.vimrc&lt;/code&gt;中添加如下两条语句&lt;/p&gt;

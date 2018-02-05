@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on StandSun</title>
-    <link>http://www.standsun.com/tags/linux/</link>
+    <link>http://standsun.com/tags/linux/</link>
     <description>Recent content in Linux on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 25 Mar 2017 22:00:57 +0800</lastBuildDate>
     
-	<atom:link href="http://www.standsun.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://standsun.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux的find命令</title>
-      <link>http://www.standsun.com/post/2017-03-25-linux-command-find/</link>
+      <link>http://standsun.com/post/2017-03-25-linux-command-find/</link>
       <pubDate>Sat, 25 Mar 2017 22:00:57 +0800</pubDate>
       
-      <guid>http://www.standsun.com/post/2017-03-25-linux-command-find/</guid>
+      <guid>http://standsun.com/post/2017-03-25-linux-command-find/</guid>
       <description>&lt;h4 id=&#34;参数说明&#34;&gt;参数说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;-exec              # 对匹配的文件执行该参数所给出的命令

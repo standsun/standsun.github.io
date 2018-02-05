@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dom on StandSun</title>
-    <link>http://www.standsun.com/tags/dom/</link>
+    <link>http://standsun.com/tags/dom/</link>
     <description>Recent content in Dom on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Mar 2017 22:17:57 +0800</lastBuildDate>
     
-	<atom:link href="http://www.standsun.com/tags/dom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://standsun.com/tags/dom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>jQuery 自动触发事件</title>
-      <link>http://www.standsun.com/post/2017-03-29-javascript-auto-execute/</link>
+      <link>http://standsun.com/post/2017-03-29-javascript-auto-execute/</link>
       <pubDate>Wed, 29 Mar 2017 22:17:57 +0800</pubDate>
       
-      <guid>http://www.standsun.com/post/2017-03-29-javascript-auto-execute/</guid>
+      <guid>http://standsun.com/post/2017-03-29-javascript-auto-execute/</guid>
       <description>&lt;h4 id=&#34;常用模拟&#34;&gt;常用模拟&lt;/h4&gt;
 
 &lt;p&gt;有时候，需要通过模拟用户操作，来达到单击的效果。例如在用户进入页面后，就触发&lt;code&gt;click&lt;/code&gt;事件，而不需要用户去主动单击。&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Javascript的Dom属性和方法</title>
-      <link>http://www.standsun.com/post/2017-03-27-javascript-dom/</link>
+      <link>http://standsun.com/post/2017-03-27-javascript-dom/</link>
       <pubDate>Mon, 27 Mar 2017 22:08:52 +0800</pubDate>
       
-      <guid>http://www.standsun.com/post/2017-03-27-javascript-dom/</guid>
+      <guid>http://standsun.com/post/2017-03-27-javascript-dom/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;document.title // 设置文档标题等价于HTML的title标签
 document.bgColor // 设置页面背景色
 document.fgColor // 设置前景色(文本颜色)

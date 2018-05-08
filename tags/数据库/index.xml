@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据库 on StandSun</title>
-    <link>http://standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <link>http://www.standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
     <description>Recent content in 数据库 on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 Mar 2017 21:31:29 +0800</lastBuildDate>
     
-	<atom:link href="http://standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SQL查看Mysql数据库大小</title>
-      <link>http://standsun.com/post/2017-03-23-mysql-database-size/</link>
+      <link>http://www.standsun.com/post/2017-03-23-mysql-database-size/</link>
       <pubDate>Thu, 23 Mar 2017 21:31:29 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-23-mysql-database-size/</guid>
+      <guid>http://www.standsun.com/post/2017-03-23-mysql-database-size/</guid>
       <description>&lt;p&gt;要想知道每个数据库的大小的话，步骤如下：&lt;/p&gt;
 
 &lt;p&gt;进入 &lt;code&gt;information_schema&lt;/code&gt; 数据库&lt;/p&gt;

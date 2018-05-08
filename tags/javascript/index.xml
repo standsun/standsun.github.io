@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on StandSun</title>
-    <link>http://standsun.com/tags/javascript/</link>
+    <link>http://www.standsun.com/tags/javascript/</link>
     <description>Recent content in Javascript on StandSun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Mar 2017 22:20:58 +0800</lastBuildDate>
     
-	<atom:link href="http://standsun.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.standsun.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>jQuery操作radio的取值与赋值</title>
-      <link>http://standsun.com/post/2017-03-30-javascript-radio/</link>
+      <link>http://www.standsun.com/post/2017-03-30-javascript-radio/</link>
       <pubDate>Thu, 30 Mar 2017 22:20:58 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-30-javascript-radio/</guid>
+      <guid>http://www.standsun.com/post/2017-03-30-javascript-radio/</guid>
       <description>&lt;h4 id=&#34;获取radio的值&#34;&gt;获取radio的值&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&amp;quot;input[name=&#39;radioName&#39;][checked]&amp;quot;).val();
@@ -32,10 +32,10 @@
     
     <item>
       <title>jQuery 自动触发事件</title>
-      <link>http://standsun.com/post/2017-03-29-javascript-auto-execute/</link>
+      <link>http://www.standsun.com/post/2017-03-29-javascript-auto-execute/</link>
       <pubDate>Wed, 29 Mar 2017 22:17:57 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-29-javascript-auto-execute/</guid>
+      <guid>http://www.standsun.com/post/2017-03-29-javascript-auto-execute/</guid>
       <description>&lt;h4 id=&#34;常用模拟&#34;&gt;常用模拟&lt;/h4&gt;
 
 &lt;p&gt;有时候，需要通过模拟用户操作，来达到单击的效果。例如在用户进入页面后，就触发&lt;code&gt;click&lt;/code&gt;事件，而不需要用户去主动单击。&lt;/p&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>网页中引入jQuery</title>
-      <link>http://standsun.com/post/2017-03-28-jquery-insert-brown-page/</link>
+      <link>http://www.standsun.com/post/2017-03-28-jquery-insert-brown-page/</link>
       <pubDate>Tue, 28 Mar 2017 22:10:31 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-28-jquery-insert-brown-page/</guid>
+      <guid>http://www.standsun.com/post/2017-03-28-jquery-insert-brown-page/</guid>
       <description>&lt;p&gt;chrome浏览器的console中执行：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;(function(d){
@@ -71,10 +71,10 @@
     
     <item>
       <title>Javascript的Dom属性和方法</title>
-      <link>http://standsun.com/post/2017-03-27-javascript-dom/</link>
+      <link>http://www.standsun.com/post/2017-03-27-javascript-dom/</link>
       <pubDate>Mon, 27 Mar 2017 22:08:52 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-27-javascript-dom/</guid>
+      <guid>http://www.standsun.com/post/2017-03-27-javascript-dom/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;document.title // 设置文档标题等价于HTML的title标签
 document.bgColor // 设置页面背景色
 document.fgColor // 设置前景色(文本颜色)
@@ -94,10 +94,10 @@ document.cookie // 设置和读出cookie
     
     <item>
       <title>Javascript重复执行</title>
-      <link>http://standsun.com/post/2017-03-26-javascript-command-repeat/</link>
+      <link>http://www.standsun.com/post/2017-03-26-javascript-command-repeat/</link>
       <pubDate>Sun, 26 Mar 2017 22:06:55 +0800</pubDate>
       
-      <guid>http://standsun.com/post/2017-03-26-javascript-command-repeat/</guid>
+      <guid>http://www.standsun.com/post/2017-03-26-javascript-command-repeat/</guid>
       <description>&lt;h5 id=&#34;需要执行的方法&#34;&gt;需要执行的方法&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function writeTime() {

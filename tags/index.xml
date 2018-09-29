@@ -21,18 +21,18 @@
     </item>
     
     <item>
-      <title>English</title>
-      <link>http://standsun.com/tags/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      <title>Git</title>
+      <link>http://standsun.com/tags/git/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://standsun.com/tags/english/</guid>
+      <guid>http://standsun.com/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
       <link>http://standsun.com/tags/go/</link>
-      <pubDate>Tue, 02 May 2017 22:33:18 +0800</pubDate>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://standsun.com/tags/go/</guid>
       <description></description>
@@ -111,92 +111,11 @@
     </item>
     
     <item>
-      <title>Preview</title>
-      <link>http://standsun.com/tags/preview/</link>
-      <pubDate>Wed, 23 Aug 2017 18:03:09 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/preview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL</title>
       <link>http://standsun.com/tags/sql/</link>
       <pubDate>Thu, 23 Mar 2017 21:31:29 +0800</pubDate>
       
       <guid>http://standsun.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>http://standsun.com/tags/shortcodes/</link>
-      <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>http://standsun.com/tags/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag-1</title>
-      <link>http://standsun.com/tags/tag-1/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/tag-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag-2</title>
-      <link>http://standsun.com/tags/tag-2/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/tag-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag-3</title>
-      <link>http://standsun.com/tags/tag-3/</link>
-      <pubDate>Wed, 23 Aug 2017 18:03:09 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/tag-3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag-4</title>
-      <link>http://standsun.com/tags/tag-4/</link>
-      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/tag-4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag-5</title>
-      <link>http://standsun.com/tags/tag-5/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/tag-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Theme preview</title>
-      <link>http://standsun.com/tags/theme-preview/</link>
-      <pubDate>Wed, 23 Aug 2017 18:03:09 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/theme-preview/</guid>
       <description></description>
     </item>
     
@@ -219,29 +138,11 @@
     </item>
     
     <item>
-      <title>中文</title>
-      <link>http://standsun.com/tags/%E4%B8%AD%E6%96%87/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/%E4%B8%AD%E6%96%87/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>数据库</title>
       <link>http://standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
       <pubDate>Thu, 23 Mar 2017 21:31:29 +0800</pubDate>
       
       <guid>http://standsun.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>日本語</title>
-      <link>http://standsun.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
-      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
-      
-      <guid>http://standsun.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
       <description></description>
     </item>
     

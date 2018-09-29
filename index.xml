@@ -6,19 +6,10 @@
     <description>Recent content on StandSun - 知行合一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Aug 2017 18:03:09 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
 	<atom:link href="http://standsun.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Theme preview</title>
-      <link>http://standsun.com/example/even-preview/</link>
-      <pubDate>Wed, 23 Aug 2017 18:03:09 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/even-preview/</guid>
-      <description>Copy from 《Hugo 主题 Nuo 文章样式预览》 这篇文章集中说明主题所支持的 Markdown 语法和 Hugo Shortcodes 插件，你也可以在这里预览到他们的样子。如果你不喜欢某些样式，可以去</description>
-    </item>
     
     <item>
       <title>About</title>
@@ -32,48 +23,20 @@ It makes use of a variety of open source projects including:
     </item>
     
     <item>
-      <title>This is a hidden post.</title>
-      <link>http://standsun.com/example/hidden-post/</link>
-      <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
+      <title>搭建自己的Git服务器</title>
+      <link>http://standsun.com/post/20190929-create-git-server/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://standsun.com/example/hidden-post/</guid>
-      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;
+      <guid>http://standsun.com/post/20190929-create-git-server/</guid>
+      <description>&lt;p&gt;jfldsj&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[English] Creating a New Theme</title>
-      <link>http://standsun.com/example/english-preview/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/english-preview/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>[日本語] 敬語体系</title>
-      <link>http://standsun.com/example/japanese-preview/</link>
-      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/japanese-preview/</guid>
-      <description>日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに</description>
-    </item>
-    
-    <item>
-      <title>[中文] 《长恨歌》</title>
-      <link>http://standsun.com/example/chinese-preview/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/chinese-preview/</guid>
-      <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
-    </item>
-    
-    <item>
       <title>Go语言常见的点</title>
       <link>http://standsun.com/post/2018-05-02-go-pits/</link>
-      <pubDate>Tue, 02 May 2017 22:33:18 +0800</pubDate>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://standsun.com/post/2018-05-02-go-pits/</guid>
       <description>&lt;h3 id=&#34;map-引用不存在的键名不会报错&#34;&gt;map 引用不存在的键名不会报错&lt;/h3&gt;
@@ -331,95 +294,6 @@ var oDate = new Date();
 
 &lt;pre&gt;&lt;code&gt;select concat(round(sum(data_length/1024/1024),2),&#39;MB&#39;) as data 
 from tables;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>http://standsun.com/example/shortcodes/</link>
-      <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/shortcodes/</guid>
-      <description>&lt;h1 id=&#34;center-right-left&#34;&gt;center, right, left&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;## default
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
-
-{{% center %}}
-## center
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
-{{% /center %}}
-
-{{% right %}}
-## right
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
-{{% /right %}}
-
-{{% left %}}
-## left
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
-{{% /left %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JS Flowchart Diagrams</title>
-      <link>http://standsun.com/example/js-flowchart-diagrams/</link>
-      <pubDate>Wed, 04 Mar 2015 21:57:50 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/js-flowchart-diagrams/</guid>
-      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-flowchart&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
-e=&amp;gt;end: End:&amp;gt;http://www.google.com
-op1=&amp;gt;operation: My Operation|past
-op2=&amp;gt;operation: Stuff|current
-sub1=&amp;gt;subroutine: My Subroutine|invalid
-cond=&amp;gt;condition: Yes
-or No?|approved:&amp;gt;http://www.google.com
-c2=&amp;gt;condition: Good idea|rejected
-io=&amp;gt;inputoutput: catch something...|request
-
-st-&amp;gt;op1(right)-&amp;gt;cond
-cond(yes, right)-&amp;gt;c2
-cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
-c2(yes)-&amp;gt;io-&amp;gt;e
-c2(no)-&amp;gt;op2-&amp;gt;e
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JS Sequence Diagrams</title>
-      <link>http://standsun.com/example/js-sequence-diagrams/</link>
-      <pubDate>Wed, 04 Mar 2015 21:57:45 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/js-sequence-diagrams/</guid>
-      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
-Note right of China: China thinks\nabout it
-China--&amp;gt;Andrew: How are you?
-Andrew-&amp;gt;&amp;gt;China: I am good thanks!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>http://standsun.com/example/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>http://standsun.com/example/syntax-highlighting/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
-  alert(&amp;quot;Hello, World!&amp;quot;)
-}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

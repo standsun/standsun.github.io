@@ -6,7 +6,7 @@
     <description>Recent content in Go on StandSun - 知行合一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 May 2017 22:33:18 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://standsun.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Go语言常见的点</title>
       <link>http://standsun.com/post/2018-05-02-go-pits/</link>
-      <pubDate>Tue, 02 May 2017 22:33:18 +0800</pubDate>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://standsun.com/post/2018-05-02-go-pits/</guid>
       <description>&lt;h3 id=&#34;map-引用不存在的键名不会报错&#34;&gt;map 引用不存在的键名不会报错&lt;/h3&gt;

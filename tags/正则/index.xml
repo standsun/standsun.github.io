@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>正则 on StandSun</title>
-    <link>http://www.standsun.com/tags/%E6%AD%A3%E5%88%99/</link>
-    <description>Recent content in 正则 on StandSun</description>
+    <title>正则 on StandSun - 知行合一</title>
+    <link>http://standsun.com/tags/%E6%AD%A3%E5%88%99/</link>
+    <description>Recent content in 正则 on StandSun - 知行合一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 Mar 2017 21:48:52 +0800</lastBuildDate>
     
-	<atom:link href="http://www.standsun.com/tags/%E6%AD%A3%E5%88%99/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://standsun.com/tags/%E6%AD%A3%E5%88%99/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PHP正则表达式模式修饰符</title>
-      <link>http://www.standsun.com/post/2017-03-24-php-preg-decorate/</link>
+      <link>http://standsun.com/post/2017-03-24-php-preg-decorate/</link>
       <pubDate>Fri, 24 Mar 2017 21:48:52 +0800</pubDate>
       
-      <guid>http://www.standsun.com/post/2017-03-24-php-preg-decorate/</guid>
+      <guid>http://standsun.com/post/2017-03-24-php-preg-decorate/</guid>
       <description>&lt;p&gt;PHP模式修饰符主要用来调整正则表达式的解释，提扩展了正则表达式在匹配、替换等操作的某些功能，增强了正则的能力：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

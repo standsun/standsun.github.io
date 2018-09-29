@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jquery on StandSun</title>
-    <link>http://www.standsun.com/tags/jquery/</link>
-    <description>Recent content in Jquery on StandSun</description>
+    <title>JQuery on StandSun - 知行合一</title>
+    <link>http://standsun.com/tags/jquery/</link>
+    <description>Recent content in JQuery on StandSun - 知行合一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Mar 2017 22:20:58 +0800</lastBuildDate>
     
-	<atom:link href="http://www.standsun.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://standsun.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>jQuery操作radio的取值与赋值</title>
-      <link>http://www.standsun.com/post/2017-03-30-javascript-radio/</link>
+      <link>http://standsun.com/post/2017-03-30-javascript-radio/</link>
       <pubDate>Thu, 30 Mar 2017 22:20:58 +0800</pubDate>
       
-      <guid>http://www.standsun.com/post/2017-03-30-javascript-radio/</guid>
+      <guid>http://standsun.com/post/2017-03-30-javascript-radio/</guid>
       <description>&lt;h4 id=&#34;获取radio的值&#34;&gt;获取radio的值&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(&amp;quot;input[name=&#39;radioName&#39;][checked]&amp;quot;).val();

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>网页中引入jQuery - StandSun</title>
+  <title>网页中引入jQuery - StandSun - 知行合一</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -21,6 +21,7 @@
 (function(d){ d.head.appendChild(d.createElement(&#39;script&#39;)).src=&amp;quot;//code.jquery.com/jquery-1.9.1.min.js&amp;quot; })(document);  
 " />
 
+  <meta name="keywords" content="standsun, think, record" />
 
 
 
@@ -30,7 +31,7 @@
 <meta name="generator" content="Hugo 0.35" />
 
 
-<link rel="canonical" href="http://www.standsun.com/post/2017-03-28-jquery-insert-brown-page/" />
+<link rel="canonical" href="http://standsun.com/post/2017-03-28-jquery-insert-brown-page/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -44,12 +45,10 @@
 
 
 
-<link href="/dist/even.min.css?v=3.0.0" rel="stylesheet">
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" href="/css/customer.css">
 
 
 <meta property="og:title" content="网页中引入jQuery" />
@@ -62,7 +61,7 @@
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.standsun.com/post/2017-03-28-jquery-insert-brown-page/" />
+<meta property="og:url" content="http://standsun.com/post/2017-03-28-jquery-insert-brown-page/" />
 
 
 
@@ -140,6 +139,8 @@
         <li class="mobile-menu-item">Tags</li>
       </a><a href="/categories/">
         <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
       </a>
   </ul>
 </nav>
@@ -159,6 +160,8 @@
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
       </li>
   </ul>
 </nav>
@@ -187,12 +190,15 @@
     
     
 <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
+  <h2 class="post-toc-title">Contents</h2>
   
   <div class="post-toc-content always-active">
     
   </div>
 </div>
+
+    
+    
 
     
     <div class="post-content">
@@ -209,11 +215,11 @@
     
     <div class="post-copyright">
   <p class="copyright-item">
-    <span class="item-title">文章作者</span>
+    <span class="item-title">Author</span>
     <span class="item-content">standsun</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">上次更新</span>
+    <span class="item-title">LastMod</span>
     <span class="item-content">2017-03-28</span>
   </p>
   
@@ -236,12 +242,12 @@
           <a class="prev" href="/post/2017-03-29-javascript-auto-execute/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">jQuery 自动触发事件</span>
-            <span class="prev-text nav-mobile">上一篇</span>
+            <span class="prev-text nav-mobile">Prev</span>
           </a>
         
           <a class="next" href="/post/2017-03-27-javascript-dom/">
             <span class="next-text nav-default">Javascript的Dom属性和方法</span>
-            <span class="prev-text nav-mobile">下一篇</span>
+            <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
       </nav>
@@ -251,29 +257,43 @@
         
   
 
-  
+  <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="/lib/gitalk/gitalk-1.2.2.min.css">
+    <script src="/lib/gitalk/gitalk-1.2.2.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    id: '2017-03-28 22:10:31 \x2b0800 CST',
+    title: '网页中引入jQuery',
+    clientID: '48584b999a9b99d6a65a',
+    clientSecret: '12819d0b892ccee7be6c71df2a50b6c03a50ed41',
+    repo: 'git@github.com:standsun\/standsun.github.io.git',
+    owner: 'standsun',
+    admin: ['standsun'],
+    body: decodeURI(location.href)
+  });
+  gitalk.render('gitalk-container');
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
-  
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="mailto:standsun@126.com" class="iconfont icon-email" title="email"></a>
-      <a href="http://github.com/standsun" class="iconfont icon-github" title="github"></a>
-      <a href="https://weibo.com/standsun" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://github.com/standsun" class="iconfont icon-github" title="github"></a>
+      <a href="http://weibo.com/standsun" class="iconfont icon-weibo" title="weibo"></a>
       <a href="https://www.zhihu.com/people/standsun" class="iconfont icon-zhihu" title="zhihu"></a>
-      <a href="https://www.douban.com/people/standsun" class="iconfont icon-douban" title="douban"></a>
-  <a href="http://www.standsun.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="http://standsun.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
   <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    主题 - 
+    Theme - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
@@ -300,15 +320,15 @@
 <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
-<script type="text/javascript" src="/dist/even.min.js?v=3.0.0"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
 
 
 
 
 
 
-
-<script src="/js/customer.js"></script>
 
 
 </body>

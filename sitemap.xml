@@ -10,13 +10,6 @@
   </url>
   
   <url>
-    <loc>http://standsun.com/post/20190929-create-git-server/</loc>
-    <lastmod>2018-09-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://standsun.com/post/2018-05-02-go-pits/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://standsun.com/tags/git/</loc>
-    <lastmod>2018-09-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://standsun.com/tags/go/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -199,7 +185,7 @@
   
   <url>
     <loc>http://standsun.com/post/</loc>
-    <lastmod>2018-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -235,13 +221,6 @@
   <url>
     <loc>http://standsun.com/tags/wrk/</loc>
     <lastmod>2017-04-03T22:47:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://standsun.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-09-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

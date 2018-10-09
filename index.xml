@@ -23,17 +23,6 @@ It makes use of a variety of open source projects including:
     </item>
     
     <item>
-      <title>搭建自己的Git服务器</title>
-      <link>http://standsun.com/post/20190929-create-git-server/</link>
-      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://standsun.com/post/20190929-create-git-server/</guid>
-      <description>&lt;p&gt;jfldsj&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Go语言常见的点</title>
       <link>http://standsun.com/post/2018-05-02-go-pits/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>

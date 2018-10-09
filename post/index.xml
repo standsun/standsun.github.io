@@ -6,21 +6,10 @@
     <description>Recent content in Posts on StandSun - 知行合一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://standsun.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>搭建自己的Git服务器</title>
-      <link>http://standsun.com/post/20190929-create-git-server/</link>
-      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://standsun.com/post/20190929-create-git-server/</guid>
-      <description>&lt;p&gt;jfldsj&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Go语言常见的点</title>
